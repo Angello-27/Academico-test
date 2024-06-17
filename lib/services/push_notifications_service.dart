@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:examenodoo/utilities/notification_helper.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 
@@ -16,7 +17,7 @@ class PushNotificationsService {
     // print('onBackground Handler ${message.messageId}');
     // ignore: avoid_print
     print(message.data);
-
+    await NotificationHelper.showNotification(message);
     _messageStream.add(message.notification?.title ?? 'No titulo');
     _messageStream.add(message.notification?.body ?? 'No subtitulo');
   }
@@ -25,6 +26,7 @@ class PushNotificationsService {
     // print('onMessage Handler ${message.messageId}');
     // ignore: avoid_print
     print(message.data);
+    await NotificationHelper.showNotification(message);
     _messageStream.add(message.notification?.title ?? 'No titulo');
     _messageStream.add(message.notification?.body ?? 'No subtitulo');
   }

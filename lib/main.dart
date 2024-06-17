@@ -2,6 +2,7 @@ import 'package:examenodoo/screens/calificaciones_screen.dart';
 import 'package:examenodoo/screens/home_screen.dart';
 import 'package:examenodoo/screens/trimestre2.dart';
 import 'package:examenodoo/services/push_notifications_service.dart';
+import 'package:examenodoo/utilities/notification_helper.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/evento_screen.dart';
@@ -9,7 +10,7 @@ import 'screens/evento_screen.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await PushNotificationsService.initializeApp();
-
+  await NotificationHelper.initialize();
   runApp(const MyApp());
 }
 
