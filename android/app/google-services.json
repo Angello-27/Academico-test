@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "340699762803",
-    "project_id": "examenodoo-7e47a",
-    "storage_bucket": "examenodoo-7e47a.appspot.com"
+    "project_number": "809090157165",
+    "project_id": "academico-58fc1",
+    "storage_bucket": "academico-58fc1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:340699762803:android:ab887efb263fc6d9bb5a06",
+        "mobilesdk_app_id": "1:809090157165:android:cbdbd35543452387758d64",
         "android_client_info": {
           "package_name": "com.example.examenodoo"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAqNLY6ibCYdkq2zUDUjAta1wROQUuOM6M"
+          "current_key": "AIzaSyAZnD4MSegcYCkjlbxWny0V8aT5GH7xdTQ"
         }
       ],
       "services": {
